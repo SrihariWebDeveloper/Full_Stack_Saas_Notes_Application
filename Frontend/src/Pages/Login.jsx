@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-const API_URL = "http://localhost:5000/api"; // Change if needed
+const API_URL = "https://full-stack-saas-notes-application.onrender.com/api"; // Change if needed
 
 const Login = ({ setToken}) => {
   const [email, setEmail] = useState("");
