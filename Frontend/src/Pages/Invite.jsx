@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://full-stack-saas-notes-application.onrender.com/api";
 
 const Invite = ({ token, tenantSlug}) => {
   const [email, setEmail] = useState("");
