@@ -180,7 +180,7 @@ app.post('/api/tenants/:slug/checkout', auth, async (req, res) => {
       quantity: 1,
     }],
     mode: 'payment',
-    success_url: 'https://full-stack-saas-notes-application.vercel.app/success?tenant=' + tenant.slug,
+    success_url: `https://full-stack-saas-notes-application.vercel.app/success?tenant=${tenant.slug}`,
     cancel_url: 'https://full-stack-saas-notes-application.vercel.app/cancel',
     metadata: { tenantSlug: tenant.slug }
   });
