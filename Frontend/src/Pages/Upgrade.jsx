@@ -7,7 +7,7 @@ const Upgrade = ({ token, tenantSlug }) => {
   const handleUpgrade = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/tenants/${tenantSlug}/checkout`,
+        `https://full-stack-saas-notes-application.onrender.com/api/tenants/${tenantSlug}/checkout`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
