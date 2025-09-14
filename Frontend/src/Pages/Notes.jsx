@@ -3,7 +3,7 @@ import axios from "axios";
 import Upgrade from "./Upgrade.jsx";
 import Invite from "./Invite.jsx";
 import { toast } from "react-toastify";
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://full-stack-saas-notes-application.onrender.com/api";
 
 const decodeJWT = (token) => {
   try {
